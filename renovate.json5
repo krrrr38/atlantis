@@ -1,8 +1,30 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
+  extends: [
     "config:base"
   ],
-  "includeForks": true,
-  "renovateFork": true
+  includeForks: true,
+  renovateFork: true,
+  regexManagers: [
+    {
+      fileMatch: ["(^|/)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
+      matchStrings: [
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=(?<currentValue>.*)\\s"
+      ],
+      versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    },
+    {
+      fileMatch: ["*.go$"],
+      matchStrings: [
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sconst .*Version = \"(?<currentValue>.*)\"\\s"
+      ],
+      versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    },
+    {
+      fileMatch: [".circleci/config.yml$"],
+      matchStrings: [
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_VERSION: (?<currentValue>.*)\\s"
+      ],
+      versioningTemplate: "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    }
+  ]
 }
