@@ -207,6 +207,7 @@ github.com/google/go-github/v31 v31.0.0 h1:JJUxlP9lFK+ziXKimTCprajMApV1ecWD4NB6C
 github.com/google/go-github/v31 v31.0.0/go.mod h1:NQPZol8/1sMoWYGN2yaALIBytu17gAWfhbweiEed3pM=
 github.com/google/go-github/v45 v45.2.0 h1:5oRLszbrkvxDDqBCNj2hjDZMKmvexaZ1xw/FCD+K3FI=
 github.com/google/go-github/v45 v45.2.0/go.mod h1:FObaZJEDSTa/WGCzZ2Z3eoCDXWJKMenWWTrd8jrta28=
+github.com/google/go-github/v48 v48.2.0/go.mod h1:dDlehKBDo850ZPvCTK0sEqTCVWcrGl2LcDiajkYi89Y=
 github.com/google/go-querystring v1.0.0/go.mod h1:odCYkC5MyYFN7vkCjXpyrEuKhc/BUO6wN/zVPAxq5ck=
 github.com/google/go-querystring v1.1.0 h1:AnCroh3fv4ZBgVIf1Iwtovgjaw/GiKJo8M8yD/fhyJ8=
 github.com/google/go-querystring v1.1.0/go.mod h1:Kcdr2DB4koayq7X8pmAG4sNG59So17icRSOU623lUBU=
@@ -477,6 +478,8 @@ github.com/urfave/negroni v1.0.0 h1:kIimOitoypq34K7TG7DUaJ9kq/N4Ofuwi1sjz0KipXc=
 github.com/urfave/negroni v1.0.0/go.mod h1:Meg73S6kFm/4PpbYdq35yYWoCZ9mS/YSx+lKnmiohz4=
 github.com/warrensbox/terraform-switcher v0.1.1-0.20220704061544-b24be8c19820 h1:lumP//y6bmEKvAR10stm//yptyzxoulO+sarVVdIdic=
 github.com/warrensbox/terraform-switcher v0.1.1-0.20220704061544-b24be8c19820/go.mod h1:saryXNaL624mlulV138FP+HhVw7IpvETUXLS3nTvH1g=
+github.com/warrensbox/terraform-switcher v0.1.1-0.20221027055942-201c8e92e997 h1:be5WC0FHdhimAhe2G3DPhduX117RM8qdTMYCMHDt4DM=
+github.com/warrensbox/terraform-switcher v0.1.1-0.20221027055942-201c8e92e997/go.mod h1:saryXNaL624mlulV138FP+HhVw7IpvETUXLS3nTvH1g=
 github.com/xanzy/go-gitlab v0.77.0 h1:UrbGlxkWVCbkpa6Fk6cM8ARh+rLACWemkJnsawT7t98=
 github.com/xanzy/go-gitlab v0.77.0/go.mod h1:d/a0vswScO7Agg1CZNz15Ic6SSvBG9vfw8egL99t4kA=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
