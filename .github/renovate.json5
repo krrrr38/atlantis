@@ -3,6 +3,8 @@
     "config:base",
     "schedule:earlyMondays"
   ],
+  includeForks: true,
+  renovateFork: true,
   automerge: false,
   platformAutomerge: false,
   labels: ["dependencies"],
